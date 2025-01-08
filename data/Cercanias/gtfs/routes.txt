@@ -1,0 +1,10 @@
+﻿route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+5__C1___,CRTM,C1,P.Pío-Atocha-Recoletos-Chamartín-Aeropuerto T4,,2,https://www.crtm.es/5__1___.aspx,4FB0E5,FFFFFF
+5__C2___,CRTM,C2,Guadalajara-Alcalá de Henares-Atocha-Chamartín,,2,https://www.crtm.es/5__2___.aspx,008B45,FFFFFF
+5__C3___,CRTM,C3,Aranjuez-Atocha-Chamartín-El Escorial,,2,https://www.crtm.es/5__3___.aspx,9F2E86,FFFFFF
+5__C4___,CRTM,C4,Parla-Atocha-Chamartín-Cantoblanco-Alcobendas-S.Sebastián de los Reyes/Colmenar Viejo,,2,https://www.crtm.es/5__4___.aspx,005AA3,FFFFFF
+5__C5___,CRTM,C5,Móstoles-El Soto-Atocha-Fuenlabrada-Humanes,,2,https://www.crtm.es/5__5___.aspx,F9BA13,FFFFFF
+5__C7___,CRTM,C7,Alcalá de Henares-Atocha-Chamartín-P.Pío-Atocha-Chamartín-Fuente de la Mora,,2,https://www.crtm.es/5__7___.aspx,ED1C24,FFFFFF
+5__C8___,CRTM,C8,Atocha-Chamartín-Villalba-Cercedilla,,2,https://www.crtm.es/5__8___.aspx,008B45,FFFFFF
+5__C9___,CRTM,C9,Cercedilla-Cotos,,2,https://www.crtm.es/5__9___.aspx,F95900,FFFFFF
+5__C10___,CRTM,C10,Villalba-Príncipe Pío-Atocha-Recoletos-Chamartín-Aeropuerto T4,,2,https://www.crtm.es/5__10___.aspx,90B70E,FFFFFF

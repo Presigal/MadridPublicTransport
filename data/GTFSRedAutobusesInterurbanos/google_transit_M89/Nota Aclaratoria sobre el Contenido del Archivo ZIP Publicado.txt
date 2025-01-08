@@ -1,0 +1,32 @@
+Título: 
+Datos GTFS de los Servicios Interurbanos de Autobuses de la Comunidad de Madrid.
+Descripción: 
+Este archivo ZIP contiene los datos de transporte público en formato GTFS estándar correspondientes a los servicios interurbanos de autobuses de la Comunidad de Madrid, así como a los servicios urbanos de los municipios de la comunidad exceptuando la capital. 
+Contacto:
+Nombre de la organización:
+Consorcio Regional de Transportes de Madrid
+Información de contacto:
+Dirección electrónica: crtm_contacto@madrid.org
+Estructura del Archivo:
+Este archivo ZIP principal contiene 21 subarchivos ZIP.
+Cada subarchivo ZIP corresponde a los datos GTFS de cada una de las 21 empresas operadoras de los servicios.
+Los subarchivos mantienen la estructura estándar del formato GTFS, incluyendo los siguientes ficheros principales:
+- agency.txt
+- calendar.txt
+- calendar_dates.txt
+- fare_attributes.txt
+- fare_rules
+- feed_info.txt
+- frequencies.txt
+- routes.txt
+- shapes.txt
+- trips.txt
+- stop_times.txt
+- stops.txt
+Uso de los datos:
+Cada subarchivo ZIP puede ser utilizado de manera independiente
+Los usuarios deberán extraer los subarchivos ZIP para trabajar con ellos
+Justificación del Formato:
+Esta decisión permite garantizar una mayor precisión en el suministro de la información de transporte del CRTM. Es importante señalar que esta medida tiene un carácter transitorio.
+Si tiene alguna duda o necesita asistencia para utilizar estos datos, puede ponerse en contacto con Consorcio Regional de Transportes de la Comunidad de Madrid a través del correo electrónico crtm_contacto@madrid.org
+
