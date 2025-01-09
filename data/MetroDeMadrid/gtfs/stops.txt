@@ -1,4 +1,4 @@
-﻿stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,wheelchair_boarding
+stop_id,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,wheelchair_boarding
 par_4_1,1,PLAZA DE CASTILLA,Paseo de la Castellana 189,40.4669,-3.68917,A,http://www.crtm.es,0,est_90_21,,0
 acc_4_1_1,1,Plaza de Castilla,Paseo de la Castellana 189,40.46682,-3.68918,,http://www.crtm.es,2,est_90_21,,0
 acc_4_1_1040,1,Ascensor,Plaza de Castilla 9,40.46555,-3.68877,,http://www.crtm.es,2,est_90_21,,0
