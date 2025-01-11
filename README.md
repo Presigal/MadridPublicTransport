@@ -1,5 +1,13 @@
 "# Madrid Transit Visualization" 
 
+11th of January, 2025
+Changed database to be Oracle instead of Postgres.
+Created jupyter notebook file to make sure that the data is readable. 
+
+10th of January, 2025
+installed psycopg2 to link postgreSQL database with python
+
+
 9th of January, 2025
 Started configuring Postgres enviroment. 
 Installed python packages: pandas numpy folium geopandas
