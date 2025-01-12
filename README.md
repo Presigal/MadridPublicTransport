@@ -1,4 +1,8 @@
 "# Madrid Transit Visualization" 
+12th of January
+installed oracledb for Python
+Configured Oracle on the machine. Setup connection string
+Configured the database connection to be handled in a different directory for security (in progress)
 
 11th of January, 2025
 Changed database to be Oracle instead of Postgres.
