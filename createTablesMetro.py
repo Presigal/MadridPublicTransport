@@ -1,6 +1,9 @@
-import MetroDeMadrid_db
-import os
+import MetroDeMadrid_db #file that contains the DB connection
+import json #importing JSON to read in MetroMadridTables.JSON
 
+#reading in the JSON
+with open('tables.json', 'r') as file:
+    table_definitions = json.load(file)
 
 try:
     #connecting to the database. Imported the function for security
@@ -16,8 +19,6 @@ try:
     
     rows = cursor.fetchall() # Fetch all rows
     columns = [desc[0] for desc in cursor.description]  #extract the column names, as the above query doesnt return column names
-
-    rows_df = pd.DataFrame(rows, columns=columns)
 
     cursor.close()
     connection.close()
