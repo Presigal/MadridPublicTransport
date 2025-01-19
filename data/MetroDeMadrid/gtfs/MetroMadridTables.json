@@ -1,0 +1,16 @@
+{
+"tables" : [
+    "agency",
+    "calendar",
+    "calendar_dates",
+    "fare_attributes",
+    "fare_rules",
+    "feed_info",
+    "frequencies",
+    "routes",
+    "shapes",
+    "stop_times",
+    "stops",
+    "trips"
+    ]
+}
