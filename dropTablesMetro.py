@@ -1,8 +1,12 @@
 import MetroDeMadrid_db #file that contains the DB connection
 import json #importing JSON to read in MetroMadridTables.JSON
-import time
 import oracledb
+import sys
 
+#Opening a logging file for anything that comes out of this file
+log_file = open("logs/dropTablesMetro_.log", "w")
+sys.stdout = log_file
+print("Starting the program...")
 
 
 connection = MetroDeMadrid_db.get_connection()  #connecting to the database. Imported the function for security
@@ -35,5 +39,3 @@ cursor.close()
 connection.close()
 
 print("Connection closed successfully!")
-
-time.sleep(10)

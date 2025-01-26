@@ -2,7 +2,7 @@
   "stops": {
     "columns" : {
       "stop_id" : "VARCHAR2(16) PRIMARY KEY",
-      "stop_code" : "stop_code NUMBER(4)",
+      "stop_code" : "NUMBER(4)",
       "stop_name" : "VARCHAR2(64)",
       "stop_desc" : "VARCHAR2(64)",
       "stop_lat" : "NUMBER(9,6)",
@@ -38,24 +38,15 @@
       "friday" : "NUMBER(1)",
       "saturday" : "NUMBER(1)",
       "sunday" : "NUMBER(1)",
-      "start_date" : {
-        "type" : "DATE",
-        "format" : "YYYYMMDD"
-      }, 
-      "end_date" : {
-        "type" : "DATE",
-        "format" : "YYYYMMDD"
-      }
+      "start_date" : "DATE",
+      "end_date" : "DATE"
     }
   },
 
   "calendar_dates" : {
     "columns" : {
       "service_id" : "VARCHAR2(8)",
-      "date" : {
-        "type" : "DATE",
-        "format" : "YYYYMMDD"
-      }, 
+      "\"date\"" : "VARCHAR2(16)",
       "exception_type" : "NUMBER(1)"
     }
   },
@@ -88,14 +79,8 @@
     "feed_publisher_name" : "VARCHAR2(64)",
     "feed_publisher_url" : "VARCHAR2(32)",
     "feed_lang" : "VARCHAR2(2)",
-    "feed_start_date" : {
-      "type" : "DATE",
-      "format" : "YYYYMMDD"
-    }, 
-    "feed_end_date"  : {
-      "type" : "DATE",
-      "format" : "YYYYMMDD"
-    }, 
+    "feed_start_date" : "VARCHAR2(16)",
+    "feed_end_date" : "VARCHAR2(16)",
     "feed_version" : "VARCHAR2(16)"
   }
 },
@@ -103,14 +88,8 @@
 "frequencies" : {
   "columns" : {
     "trip_id" : "VARCHAR2(32)",
-    "start_time" : {
-      "type": "DATE",
-      "format": "HH24:MI:SS"
-    }, 
-    "end_time" : {
-      "type": "DATE",
-      "format": "HH24:MI:SS"
-    }, 
+    "start_time" : "INTERVAL DAY TO SECOND",
+    "end_time" : "INTERVAL DAY TO SECOND",
     "headway_secs" : "NUMBER(4)",
     "exact_times" : "NUMBER(1)"
   }
@@ -143,14 +122,8 @@
 "stop_times" : {
   "columns" : {
     "trip_id" : "VARCHAR2(32)",
-    "arrival_time" : {
-      "type" : "INTERVAL DAY TO SECOND",
-      "format" : "HH24:MI:SS"
-    }, 
-    "departure_time" : {
-      "type" : "INTERVAL DAY TO SECOND",
-      "format" : "HH24:MI:SS"
-    },
+    "arrival_time" : "INTERVAL DAY TO SECOND",
+    "departure_time" : "INTERVAL DAY TO SECOND",
     "stop_id" : "VARCHAR2(16)",
     "stop_sequence" : "NUMBER(2)",
     "stop_headsign" : "VARCHAR2(255)",
