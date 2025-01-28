@@ -1,6 +1,5 @@
 import MetroDeMadrid_db #file that contains the DB connection
 import json #importing JSON to read in MetroMadridTables.JSON
-import time
 import oracledb
 import sys
 

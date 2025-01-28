@@ -3,8 +3,7 @@ connection established!
 Table stops dropped successfully.
 Table agency dropped successfully.
 Table calendar dropped successfully.
-Error creating table calendar_dates: ORA-00942: table or view does not exist
-Help: https://docs.oracle.com/error-help/db/ora-00942/
+Table calendar_dates dropped successfully.
 Table fare_attributes dropped successfully.
 Table fare_rules dropped successfully.
 Table feed_info dropped successfully.
