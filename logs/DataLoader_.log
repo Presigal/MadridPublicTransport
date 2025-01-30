@@ -1,0 +1,43 @@
+Starting the program...
+connection established!
+
+Table agency contents copied succesfully!
+
+Data from data/MetroDeMadrid/gtfs/agency.txt imported successfully into agency.
+
+Error importing data/MetroDeMadrid/gtfs/calendar.txt: ORA-00932: inconsistent datatypes: expected DATE got NUMBER
+Help: https://docs.oracle.com/error-help/db/ora-00932/
+
+Error importing data/MetroDeMadrid/gtfs/calendar_dates.txt: ORA-01747: invalid user.table.column, table.column, or column specification
+Help: https://docs.oracle.com/error-help/db/ora-01747/
+
+Error importing data/MetroDeMadrid/gtfs/fare_attributes.txt: DPY-4010: a bind variable replacement value for placeholder ":1" was not provided
+
+Error importing data/MetroDeMadrid/gtfs/fare_rules.txt: DPY-4010: a bind variable replacement value for placeholder ":1" was not provided
+
+Table feed_info contents copied succesfully!
+
+Data from data/MetroDeMadrid/gtfs/feed_info.txt imported successfully into feed_info.
+
+Error importing data/MetroDeMadrid/gtfs/frequencies.txt: ORA-01867: the interval is invalid
+Help: https://docs.oracle.com/error-help/db/ora-01867/
+
+Error importing data/MetroDeMadrid/gtfs/routes.txt: ORA-12899: value too large for column "SYSTEM"."ROUTES"."ROUTE_SHORT_NAME" (actual: 2, maximum: 1)
+Help: https://docs.oracle.com/error-help/db/ora-12899/
+
+Error importing data/MetroDeMadrid/gtfs/shapes.txt: ORA-01438: value larger than specified precision allowed for this column
+Help: https://docs.oracle.com/error-help/db/ora-01438/
+
+Table stops contents copied succesfully!
+
+Data from data/MetroDeMadrid/gtfs/stops.txt imported successfully into stops.
+
+Error importing data/MetroDeMadrid/gtfs/stop_times.txt: ORA-01867: the interval is invalid
+Help: https://docs.oracle.com/error-help/db/ora-01867/
+
+Error importing data/MetroDeMadrid/gtfs/trips.txt: ORA-01722: invalid number
+Help: https://docs.oracle.com/error-help/db/ora-01722/
+
+Tables successfully copied data to: ['table_name', 'table_name', 'table_name']
+
+connection successfully closed!
