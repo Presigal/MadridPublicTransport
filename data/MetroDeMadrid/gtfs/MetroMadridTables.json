@@ -38,8 +38,8 @@
       "friday" : "NUMBER(1)",
       "saturday" : "NUMBER(1)",
       "sunday" : "NUMBER(1)",
-      "start_date" : "DATE",
-      "end_date" : "DATE"
+      "start_date" : "VARCHAR(16)",
+      "end_date" : "VARCHAR(16)"
     }
   },
 
@@ -47,7 +47,7 @@
     "columns" : {
       "service_id" : "VARCHAR2(8)",
       "\"date\"" : "VARCHAR2(16)",
-      "exception_type" : "NUMBER(1)"
+      "exception_type" : "NUMBER(2)"
     }
   },
 
@@ -112,10 +112,10 @@
 "shapes" : {
   "columns" : {
     "shape_id" : "VARCHAR2(32)",
-    "shape_pt_lat" : "NUMBER(15, 13)",
-    "shape_pt_lon" : "NUMBER(15, 13)",
+    "shape_pt_lat" : "NUMBER(16, 14)",
+    "shape_pt_lon" : "NUMBER(16, 14)",
     "shape_pt_sequence" : "NUMBER(8)",
-    "shape_dist_traveled" : "NUMBER(14,11)"
+    "shape_dist_traveled" : "NUMBER(16,14)"
   }
 },
 

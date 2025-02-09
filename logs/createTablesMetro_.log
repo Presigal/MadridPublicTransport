@@ -2,7 +2,7 @@ Starting the program...
 connection established!
 
 The entirety of MetroTables:
-{'stops': {'columns': {'stop_id': 'VARCHAR2(16) PRIMARY KEY', 'stop_code': 'NUMBER(4)', 'stop_name': 'VARCHAR2(64)', 'stop_desc': 'VARCHAR2(64)', 'stop_lat': 'NUMBER(9,6)', 'stop_lon': 'NUMBER(9,6)', 'zone_id': 'VARCHAR2(4)', 'stop_url': 'VARCHAR2(256)', 'location_type': 'NUMBER(1)', 'parent_station': 'VARCHAR2(16)', 'stop_timezone': 'VARCHAR2(16)', 'wheelchair_boarding': 'NUMBER(1)'}}, 'agency': {'columns': {'agency_id': 'VARCHAR2(4)', 'agency_name': 'VARCHAR2(64)', 'agency_url': 'VARCHAR2(32)', 'agency_timezone': 'VARCHAR2(16)', 'agency_lang': 'VARCHAR2(2)', 'agency_phone': 'VARCHAR2(16)', 'agency_fare_url': 'VARCHAR2(32)'}}, 'calendar': {'columns': {'service_id': 'VARCHAR2(8)', 'monday': 'NUMBER(1)', 'tuesday': 'NUMBER(1)', 'wednesday': 'NUMBER(1)', 'thursday': 'NUMBER(1)', 'friday': 'NUMBER(1)', 'saturday': 'NUMBER(1)', 'sunday': 'NUMBER(1)', 'start_date': 'DATE', 'end_date': 'DATE'}}, 'calendar_dates': {'columns': {'service_id': 'VARCHAR2(8)', '"date"': 'VARCHAR2(16)', 'exception_type': 'NUMBER(1)'}}, 'fare_attributes': {'columns': {'fare_id': 'VARCHAR2(64)', 'price': 'VARCHAR2(64)', 'currency_type': 'VARCHAR2(64)', 'payment_method': 'VARCHAR2(64)', 'transfers': 'VARCHAR2(64)', 'transfer_duration': 'VARCHAR2(64)'}}, 'fare_rules': {'columns': {'fare_id': 'VARCHAR2(64)', 'route_id': 'VARCHAR2(64)', 'origin_id': 'VARCHAR2(64)', 'destination_id': 'VARCHAR2(64)', 'contains_id': 'VARCHAR2(64)'}}, 'feed_info': {'columns': {'feed_publisher_name': 'VARCHAR2(64)', 'feed_publisher_url': 'VARCHAR2(32)', 'feed_lang': 'VARCHAR2(2)', 'feed_start_date': 'VARCHAR2(16)', 'feed_end_date': 'VARCHAR2(16)', 'feed_version': 'VARCHAR2(16)'}}, 'frequencies': {'columns': {'trip_id': 'VARCHAR2(32)', 'start_time': 'INTERVAL DAY TO SECOND', 'end_time': 'INTERVAL DAY TO SECOND', 'headway_secs': 'NUMBER(4)', 'exact_times': 'NUMBER(1)'}}, 'routes': {'columns': {'route_id': 'VARCHAR2(8)', 'agency_id': 'VARCHAR2(4)', 'route_short_name': 'VARCHAR2(1)', 'route_long_name': 'VARCHAR2(64)', 'route_desc': 'VARCHAR2(64)', 'route_type': 'NUMBER(1)', 'route_url': 'VARCHAR2(32)', 'route_color': 'VARCHAR2(8)', 'route_text_color': 'VARCHAR2(8)'}}, 'shapes': {'columns': {'shape_id': 'VARCHAR2(32)', 'shape_pt_lat': 'NUMBER(15, 13)', 'shape_pt_lon': 'NUMBER(15, 13)', 'shape_pt_sequence': 'NUMBER(8)', 'shape_dist_traveled': 'NUMBER(14,11)'}}, 'stop_times': {'columns': {'trip_id': 'VARCHAR2(32)', 'arrival_time': 'INTERVAL DAY TO SECOND', 'departure_time': 'INTERVAL DAY TO SECOND', 'stop_id': 'VARCHAR2(16)', 'stop_sequence': 'NUMBER(2)', 'stop_headsign': 'VARCHAR2(255)', 'pickup_type': 'NUMBER(1)', 'drop_off_type': 'NUMBER(1)', 'shape_dist_traveled': 'NUMBER(10,6)'}}, 'trips': {'columns': {'route_id': 'VARCHAR2(8)', 'service_id': 'VARCHAR2(64)', 'trip_id': 'VARCHAR2(32)', 'trip_headsign': 'VARCHAR2(32)', 'trip_short_name': 'NUMBER(2)', 'direction_id': 'NUMBER(2)', 'block_id': 'VARCHAR2(64)', 'shape_id': 'VARCHAR2(32)', 'wheelchair_accessible': 'NUMBER(1)'}}}
+{'stops': {'columns': {'stop_id': 'VARCHAR2(16) PRIMARY KEY', 'stop_code': 'NUMBER(4)', 'stop_name': 'VARCHAR2(64)', 'stop_desc': 'VARCHAR2(64)', 'stop_lat': 'NUMBER(9,6)', 'stop_lon': 'NUMBER(9,6)', 'zone_id': 'VARCHAR2(4)', 'stop_url': 'VARCHAR2(256)', 'location_type': 'NUMBER(1)', 'parent_station': 'VARCHAR2(16)', 'stop_timezone': 'VARCHAR2(16)', 'wheelchair_boarding': 'NUMBER(1)'}}, 'agency': {'columns': {'agency_id': 'VARCHAR2(4)', 'agency_name': 'VARCHAR2(64)', 'agency_url': 'VARCHAR2(32)', 'agency_timezone': 'VARCHAR2(16)', 'agency_lang': 'VARCHAR2(2)', 'agency_phone': 'VARCHAR2(16)', 'agency_fare_url': 'VARCHAR2(32)'}}, 'calendar': {'columns': {'service_id': 'VARCHAR2(8)', 'monday': 'NUMBER(1)', 'tuesday': 'NUMBER(1)', 'wednesday': 'NUMBER(1)', 'thursday': 'NUMBER(1)', 'friday': 'NUMBER(1)', 'saturday': 'NUMBER(1)', 'sunday': 'NUMBER(1)', 'start_date': 'VARCHAR(16)', 'end_date': 'VARCHAR(16)'}}, 'calendar_dates': {'columns': {'service_id': 'VARCHAR2(8)', '"date"': 'VARCHAR2(16)', 'exception_type': 'NUMBER(2)'}}, 'fare_attributes': {'columns': {'fare_id': 'VARCHAR2(64)', 'price': 'VARCHAR2(64)', 'currency_type': 'VARCHAR2(64)', 'payment_method': 'VARCHAR2(64)', 'transfers': 'VARCHAR2(64)', 'transfer_duration': 'VARCHAR2(64)'}}, 'fare_rules': {'columns': {'fare_id': 'VARCHAR2(64)', 'route_id': 'VARCHAR2(64)', 'origin_id': 'VARCHAR2(64)', 'destination_id': 'VARCHAR2(64)', 'contains_id': 'VARCHAR2(64)'}}, 'feed_info': {'columns': {'feed_publisher_name': 'VARCHAR2(64)', 'feed_publisher_url': 'VARCHAR2(32)', 'feed_lang': 'VARCHAR2(2)', 'feed_start_date': 'VARCHAR2(16)', 'feed_end_date': 'VARCHAR2(16)', 'feed_version': 'VARCHAR2(16)'}}, 'frequencies': {'columns': {'trip_id': 'VARCHAR2(32)', 'start_time': 'INTERVAL DAY TO SECOND', 'end_time': 'INTERVAL DAY TO SECOND', 'headway_secs': 'NUMBER(4)', 'exact_times': 'NUMBER(1)'}}, 'routes': {'columns': {'route_id': 'VARCHAR2(8)', 'agency_id': 'VARCHAR2(4)', 'route_short_name': 'VARCHAR2(1)', 'route_long_name': 'VARCHAR2(64)', 'route_desc': 'VARCHAR2(64)', 'route_type': 'NUMBER(1)', 'route_url': 'VARCHAR2(32)', 'route_color': 'VARCHAR2(8)', 'route_text_color': 'VARCHAR2(8)'}}, 'shapes': {'columns': {'shape_id': 'VARCHAR2(32)', 'shape_pt_lat': 'NUMBER(16, 14)', 'shape_pt_lon': 'NUMBER(16, 14)', 'shape_pt_sequence': 'NUMBER(8)', 'shape_dist_traveled': 'NUMBER(16,14)'}}, 'stop_times': {'columns': {'trip_id': 'VARCHAR2(32)', 'arrival_time': 'INTERVAL DAY TO SECOND', 'departure_time': 'INTERVAL DAY TO SECOND', 'stop_id': 'VARCHAR2(16)', 'stop_sequence': 'NUMBER(2)', 'stop_headsign': 'VARCHAR2(255)', 'pickup_type': 'NUMBER(1)', 'drop_off_type': 'NUMBER(1)', 'shape_dist_traveled': 'NUMBER(10,6)'}}, 'trips': {'columns': {'route_id': 'VARCHAR2(8)', 'service_id': 'VARCHAR2(64)', 'trip_id': 'VARCHAR2(32)', 'trip_headsign': 'VARCHAR2(32)', 'trip_short_name': 'NUMBER(2)', 'direction_id': 'NUMBER(2)', 'block_id': 'VARCHAR2(64)', 'shape_id': 'VARCHAR2(32)', 'wheelchair_accessible': 'NUMBER(1)'}}}
 Creating table stops
 
 *******columns_definitions**********
@@ -28,10 +28,10 @@ __________________________________________________________________
 Creating table calendar
 
 *******columns_definitions**********
-service_id VARCHAR2(8), monday NUMBER(1), tuesday NUMBER(1), wednesday NUMBER(1), thursday NUMBER(1), friday NUMBER(1), saturday NUMBER(1), sunday NUMBER(1), start_date DATE, end_date DATE
+service_id VARCHAR2(8), monday NUMBER(1), tuesday NUMBER(1), wednesday NUMBER(1), thursday NUMBER(1), friday NUMBER(1), saturday NUMBER(1), sunday NUMBER(1), start_date VARCHAR(16), end_date VARCHAR(16)
 
 **********create_table_sql*************
-CREATE TABLE calendar (service_id VARCHAR2(8), monday NUMBER(1), tuesday NUMBER(1), wednesday NUMBER(1), thursday NUMBER(1), friday NUMBER(1), saturday NUMBER(1), sunday NUMBER(1), start_date DATE, end_date DATE)
+CREATE TABLE calendar (service_id VARCHAR2(8), monday NUMBER(1), tuesday NUMBER(1), wednesday NUMBER(1), thursday NUMBER(1), friday NUMBER(1), saturday NUMBER(1), sunday NUMBER(1), start_date VARCHAR(16), end_date VARCHAR(16))
 
 Table calendar created successfully.
 
@@ -39,10 +39,10 @@ __________________________________________________________________
 Creating table calendar_dates
 
 *******columns_definitions**********
-service_id VARCHAR2(8), "date" VARCHAR2(16), exception_type NUMBER(1)
+service_id VARCHAR2(8), "date" VARCHAR2(16), exception_type NUMBER(2)
 
 **********create_table_sql*************
-CREATE TABLE calendar_dates (service_id VARCHAR2(8), "date" VARCHAR2(16), exception_type NUMBER(1))
+CREATE TABLE calendar_dates (service_id VARCHAR2(8), "date" VARCHAR2(16), exception_type NUMBER(2))
 
 Table calendar_dates created successfully.
 
@@ -105,10 +105,10 @@ __________________________________________________________________
 Creating table shapes
 
 *******columns_definitions**********
-shape_id VARCHAR2(32), shape_pt_lat NUMBER(15, 13), shape_pt_lon NUMBER(15, 13), shape_pt_sequence NUMBER(8), shape_dist_traveled NUMBER(14,11)
+shape_id VARCHAR2(32), shape_pt_lat NUMBER(16, 14), shape_pt_lon NUMBER(16, 14), shape_pt_sequence NUMBER(8), shape_dist_traveled NUMBER(16,14)
 
 **********create_table_sql*************
-CREATE TABLE shapes (shape_id VARCHAR2(32), shape_pt_lat NUMBER(15, 13), shape_pt_lon NUMBER(15, 13), shape_pt_sequence NUMBER(8), shape_dist_traveled NUMBER(14,11))
+CREATE TABLE shapes (shape_id VARCHAR2(32), shape_pt_lat NUMBER(16, 14), shape_pt_lon NUMBER(16, 14), shape_pt_sequence NUMBER(8), shape_dist_traveled NUMBER(16,14))
 
 Table shapes created successfully.
 
