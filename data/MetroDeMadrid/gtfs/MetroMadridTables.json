@@ -88,8 +88,8 @@
 "frequencies" : {
   "columns" : {
     "trip_id" : "VARCHAR2(32)",
-    "start_time" : "INTERVAL DAY TO SECOND",
-    "end_time" : "INTERVAL DAY TO SECOND",
+    "start_time" : "TIMESTAMP",
+    "end_time" : "TIMESTAMP",
     "headway_secs" : "NUMBER(4)",
     "exact_times" : "NUMBER(1)"
   }
