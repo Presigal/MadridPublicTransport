@@ -27,10 +27,9 @@ def load_gtfs_files(file_path, table_name):
             df = renameDate(df) #function to rename date to "date" to avoid Oracle keyword date
 
         if  not df.empty:
-            if 'start_time' in df.columns or 'end_time' in df.columns:
+            if 'start_time' in df.columns or 'end_time'  or 'arrival_time' or 'departure_time' in df.columns:
                 startEndTime(df)
-
-
+                
             else:
                 # Prepare the SQL insert statement
                 columns = ', '.join(df.columns)
@@ -60,19 +59,12 @@ def renameDate(df_):
     df_ = df_.rename(columns={'date': '"date"'})
     return df_
             
+#This function is to correctly import the DATE values into SQL. Used for the "Frequencies" table
 def startEndTime(df__):
     if 'start_time' in df__.columns or 'end_time' in df__.columns:
 
         df__["start_time"] = df__["start_time"].apply(convert_to_timestamp)
         df__["end_time"] = df__["end_time"].apply(convert_to_timestamp)
-
-        print(f"All rows with 24 in start_time: {df__[df__["start_time"].str.contains("24:", na=False, regex=True)]}\n")
-        print(f"All rows with 24 in start_time: {df__[df__["end_time"].str.contains("24:", na=False, regex=True)]}\n")
-
-        print(df__.head(20))
-
-
-        print
 
         # Use TO_TIMESTAMP to convert the string into a proper TIMESTAMP
         query = """
@@ -88,14 +80,6 @@ def startEndTime(df__):
 
         connection.commit()
 
-# def convert_to_timestamp(time_str):
-#     if not pd.isna(time_str):
-#         if time_str.startswith("24:"):  # If it starts with 24:xx:xx
-#             return "1970-01-02 00:00:00"  # Move to the next day
-#         return f"1970-01-01 {time_str}"  # Normal case
-#     else:
-#         return None
-    
 def convert_to_timestamp(time_str):
     if not pd.isna(time_str):
         #the map function allows us to seperate the three seperate values of the timestamp. Will be useful for checking anything over 23 hrs.

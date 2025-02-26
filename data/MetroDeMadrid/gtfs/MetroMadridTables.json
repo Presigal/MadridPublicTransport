@@ -99,11 +99,11 @@
   "columns" : {
     "route_id" : "VARCHAR2(8)",
     "agency_id" : "VARCHAR2(4)",
-    "route_short_name" : "VARCHAR2(1)",
+    "route_short_name" : "VARCHAR2(2)",
     "route_long_name" : "VARCHAR2(64)",
     "route_desc" : "VARCHAR2(64)",
     "route_type" : "NUMBER(1)",
-    "route_url" : "VARCHAR2(32)",
+    "route_url" : "VARCHAR2(64)",
     "route_color" : "VARCHAR2(8)",
     "route_text_color" : "VARCHAR2(8)"
   }
@@ -112,18 +112,18 @@
 "shapes" : {
   "columns" : {
     "shape_id" : "VARCHAR2(32)",
-    "shape_pt_lat" : "NUMBER(16, 14)",
-    "shape_pt_lon" : "NUMBER(16, 14)",
+    "shape_pt_lat" : "NUMBER(18, 14)",
+    "shape_pt_lon" : "NUMBER(18, 14)",
     "shape_pt_sequence" : "NUMBER(8)",
-    "shape_dist_traveled" : "NUMBER(16,14)"
+    "shape_dist_traveled" : "NUMBER(18,14)"
   }
 },
 
 "stop_times" : {
   "columns" : {
     "trip_id" : "VARCHAR2(32)",
-    "arrival_time" : "INTERVAL DAY TO SECOND",
-    "departure_time" : "INTERVAL DAY TO SECOND",
+    "arrival_time" : "TIMESTAMP",
+    "departure_time" : "TIMESTAMP",
     "stop_id" : "VARCHAR2(16)",
     "stop_sequence" : "NUMBER(2)",
     "stop_headsign" : "VARCHAR2(255)",
@@ -139,7 +139,7 @@
       "service_id" : "VARCHAR2(64)",
       "trip_id" : "VARCHAR2(32)",
       "trip_headsign" : "VARCHAR2(32)",
-      "trip_short_name" : "NUMBER(2)",
+      "trip_short_name" : "VARCHAR2(64)",
       "direction_id" : "NUMBER(2)",
       "block_id" : "VARCHAR2(64)",
       "shape_id" : "VARCHAR2(32)",
